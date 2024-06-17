@@ -4,178 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinese Love Rice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Noto Sans SC', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background: #f5f5f5;
             color: #333;
         }
         .header {
-            background: #d2232a;
+            background: #ff4d4d; /* Red background */
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 50px 0;
+            font-family: 'Comic Neue', cursive; /* Fun and meme-like font */
         }
         .header h1 {
-            margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            margin-bottom: 20px;
         }
-        .nav {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        .nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .nav a:hover {
-            text-decoration: underline;
+        .header p {
+            font-size: 1.5em;
         }
         .container {
             width: 80%;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        .section {
-            margin: 20px 0;
+        .description {
+            margin-top: 30px;
         }
-        .section h2 {
-            margin-bottom: 10px;
-            color: #d2232a;
-            border-bottom: 3px solid gold;
-            padding-bottom: 5px;
-        }
-        .section p {
+        .description p {
+            font-size: 1.2em;
             line-height: 1.6;
         }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .feature {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex-basis: 30%;
-            margin: 10px;
-            text-align: center;
-            border: 2px solid #d2232a;
-        }
-        .feature img {
-            width: 80px;
-            height: 80px;
-        }
-        .contact-form {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid #d2232a;
-        }
-        .contact-form label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background: #d2232a;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background: #b71d24;
-        }
-        .footer {
-            background: #d2232a;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            border-top: 5px solid gold;
-        }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="header">
         <h1>Chinese Love Rice</h1>
+        <p>中國人愛米</p>
+    </div>
+
+    <div class="container description">
         <p>When we eat rice, we become very happy people.</p>
-    </div>
-
-    <div class="nav">
-        <a href="#about">关于</a>
-        <a href="#features">特点</a>
-        <a href="#contact">联系我们</a>
-    </div>
-
-    <div class="container">
-        <div class="section" id="about">
-            <h2>关于 Meme Coin</h2>
-            <p>Your Meme Coin 是一种革命性的加密货币，旨在为加密空间带来乐趣和幽默。基于安全和去中心化的区块链技术，Meme Coin 将数字货币的力量与互联网最好的笑话结合在一起。</p>
-        </div>
-
-        <div class="section" id="features">
-            <h2>特点</h2>
-            <div class="features">
-                <div class="feature">
-                    <img src="https://via.placeholder.com/80" alt="安全">
-                    <h3>安全</h3>
-                    <p>安全和去中心化的区块链技术。</p>
-                </div>
-                <div class="feature">
-                    <img src="https://via.placeholder.com/80" alt="社区驱动">
-                    <h3>社区驱动</h3>
-                    <p>由社区驱动和充满乐趣的开发。</p>
-                </div>
-                <div class="feature">
-                    <img src="https://via.placeholder.com/80" alt="低费用">
-                    <h3>低费用</h3>
-                    <p>低交易费用和快速转账速度。</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="contact">
-            <h2>联系我们</h2>
-            <div class="contact-form">
-                <form>
-                    <label for="name">名字</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">电子邮件</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">留言</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    
-                    <button type="submit">发送</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2024 Your Meme Coin. 版权所有。</p>
+        <p>當我們吃米飯時，我們就會變成非常快樂的人。</p>
     </div>
 
 </body>
