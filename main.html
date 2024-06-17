@@ -6,13 +6,13 @@
     <title>Your Meme Coin</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans SC', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background: #f5f5f5;
         }
         .header {
-            background: #333;
+            background: #d2232a;
             color: white;
             text-align: center;
             padding: 50px 0;
@@ -20,6 +20,9 @@
         .header h1 {
             margin: 0;
             font-size: 3em;
+        }
+        .header p {
+            font-size: 1.5em;
         }
         .container {
             width: 80%;
@@ -31,7 +34,7 @@
         }
         .section h2 {
             margin-bottom: 20px;
-            color: #333;
+            color: #d2232a;
         }
         .section p {
             line-height: 1.6;
@@ -49,6 +52,10 @@
             flex-basis: 30%;
             margin: 10px;
             text-align: center;
+        }
+        .feature img {
+            width: 100px;
+            height: 100px;
         }
         .contact-form {
             background: white;
@@ -68,7 +75,7 @@
             border-radius: 5px;
         }
         .contact-form button {
-            background: #333;
+            background: #d2232a;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -76,52 +83,56 @@
             cursor: pointer;
         }
         .contact-form button:hover {
-            background: #555;
+            background: #b71d24;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="header">
         <h1>Your Meme Coin</h1>
-        <p>The funniest coin in the crypto world!</p>
+        <p>笑声的加密货币</p>
     </div>
 
     <div class="container">
         <div class="section">
-            <h2>About Meme Coin</h2>
-            <p>Your Meme Coin is a revolutionary new cryptocurrency designed to bring fun and humor to the crypto space. Built on a secure and decentralized blockchain, Meme Coin combines the power of digital currency with the spirit of the internet's best memes.</p>
+            <h2>关于 Meme Coin</h2>
+            <p>Your Meme Coin 是一种革命性的加密货币，旨在为加密空间带来乐趣和幽默。基于安全和去中心化的区块链技术，Meme Coin 将数字货币的力量与互联网最好的笑话结合在一起。</p>
         </div>
 
         <div class="section features">
             <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Secure and decentralized blockchain technology.</p>
+                <img src="https://via.placeholder.com/100" alt="安全">
+                <h3>安全</h3>
+                <p>安全和去中心化的区块链技术。</p>
             </div>
             <div class="feature">
-                <h3>Feature 2</h3>
-                <p>Community-driven and fun-oriented development.</p>
+                <img src="https://via.placeholder.com/100" alt="社区驱动">
+                <h3>社区驱动</h3>
+                <p>由社区驱动和充满乐趣的开发。</p>
             </div>
             <div class="feature">
-                <h3>Feature 3</h3>
-                <p>Low transaction fees and fast transfer speeds.</p>
+                <img src="https://via.placeholder.com/100" alt="低费用">
+                <h3>低费用</h3>
+                <p>低交易费用和快速转账速度。</p>
             </div>
         </div>
 
         <div class="section">
-            <h2>Contact Us</h2>
+            <h2>联系我们</h2>
             <div class="contact-form">
                 <form>
-                    <label for="name">Name</label>
+                    <label for="name">名字</label>
                     <input type="text" id="name" name="name" required>
                     
-                    <label for="email">Email</label>
+                    <label for="email">电子邮件</label>
                     <input type="email" id="email" name="email" required>
                     
-                    <label for="message">Message</label>
+                    <label for="message">留言</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                     
-                    <button type="submit">Send</button>
+                    <button type="submit">发送</button>
                 </form>
             </div>
         </div>
