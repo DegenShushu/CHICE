@@ -35,9 +35,11 @@
         }
         .nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
             font-size: 1.2em;
+            display: inline-block;
+            padding: 10px;
         }
         .nav a:hover {
             text-decoration: underline;
@@ -46,28 +48,46 @@
             width: 100%;
             height: auto;
             display: block;
+            margin: 0 auto;
+        }
+        .how-to-buy-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .how-to-buy-steps {
+            flex: 1;
+        }
+        .gif-container {
+            flex: 1;
+            text-align: right;
+        }
+        .gif-container img {
+            max-width: 100%; /* Ensure the GIF does not exceed its container width */
+            height: auto; /* Maintain aspect ratio */
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
         }
         .description p {
-            font-size: 1.5em; /* Increased font size for Chinese text */
+            font-size: 1.2em; /* Increased font size for Chinese text */
             line-height: 1.6;
         }
         .buttons {
             margin: 20px 0;
         }
         .buttons a {
-            margin: 0 10px;
+            margin: 10px 5px;
             text-decoration: none;
             color: white;
             background: #ff4d4d;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 1em;
+            display: inline-block;
         }
         .buttons a:hover {
             background: #b71d24;
@@ -83,22 +103,27 @@
             padding-bottom: 5px;
         }
         .section p {
-            font-size: 1.2em;
+            font-size: 1em;
             line-height: 1.6;
         }
         .about-section {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
         }
         .about-section img {
-            width: 50%;
-            height: auto;
+            width: 100%;
+            max-width: 400px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-right: 20px;
+            margin: 10px;
         }
         .about-section .text {
-            width: 50%;
+            width: 100%;
+            max-width: 500px;
+            margin: 10px;
         }
         .footer {
             background: #333;
@@ -106,6 +131,58 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 1.5em;
+            }
+            .nav a {
+                font-size: 1em;
+                padding: 8px;
+            }
+            .description p {
+                font-size: 1em;
+            }
+            .buttons a {
+                font-size: 0.9em;
+                padding: 8px 10px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .section p {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .header p {
+                font-size: 1.2em;
+            }
+            .nav a {
+                font-size: 0.9em;
+                padding: 6px;
+                margin: 5px;
+            }
+            .description p {
+                font-size: 0.9em;
+            }
+            .buttons a {
+                font-size: 0.8em;
+                padding: 6px 8px;
+                margin: 5px;
+            }
+            .section h2 {
+                font-size: 1.2em;
+            }
+            .section p {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -127,11 +204,10 @@
 
     <div class="container">
         <div id="home">
-            <img src="main.jpg" alt="Eating Rice, China" class="main-image">
+            <img src="main.jpg" alt="Eating Rice, China" class="main-image" style="max-height: 400px; width: auto;">
             <div class="description">
-                <p>Eating Rice, China</p>
+                <p>Eating Rice, China 😍🍚🇨🇳 </p>
                 <p>在中國吃米飯</p>
-                <p>😍🍚🇨🇳</p>
             </div>
             <div class="buttons">
                 <a href="#">Telegram</a>
@@ -139,44 +215,50 @@
                 <a href="#">Dexscreener</a>
                 <a href="#">Pumpfun</a>
             </div>
+            <p>Credits to Berthold Laufer, who took this photo in China between 1901 and 1904. This man is believed to be the first Chinese person ever photographed while laughing.</p>
         </div>
 
         <div id="about" class="section">
             <div class="about-section">
-                <img src="https://example.com/path/to/your/about-image.jpg" alt="About Rice">
+                <img src="tate.png" alt="Description of rice" class="your-class-name" style="max-height: 400px; width: auto;">
                 <div class="text">
                     <h2>About</h2>
                     <p>In China, we love rice, because rice makes us very very happy people, because rice unites us all together, and because rice is very very healthy.</p>
                     <p>😍😋🍚🍙🍛🍣🍘</p>
+                    <p>Even Andrew Tate loves rice and named his dish, Flavor.</p>
                 </div>
             </div>
         </div>
 
         <div id="how-to-buy" class="section">
             <h2>How to buy?</h2>
-            <p><strong>Step 1:</strong> Get a wallet<br>
-            Download your wallet of choice (Phantom, Solflare...)</p>
-            <p><strong>Step 2:</strong> Get some SOL<br>
-            Buy some SOL from an exchange (Binance, Bybit...)</p>
-            <p><strong>Step 3:</strong> Go to exchange<br>
-            Buy CHICE from Pump Fun.</p>
+            <div class="how-to-buy-content">
+                <div class="how-to-buy-steps">
+                    <p><strong>Step 1:</strong> Get a wallet<br>
+                    Download your wallet of choice (Phantom, Solflare...)</p>
+                    <p><strong>Step 2:</strong> Get some SOL<br>
+                    Buy some SOL from an exchange (Binance, Bybit...)</p>
+                    <p><strong>Step 3:</strong> Go to exchange<br>
+                    Buy CHICE from Pump Fun.</p>
+                </div>
+                <div class="gif-container">
+                    <img src="about.gif" alt="Description of GIF" class="your-class-name" style="max-height: 400px; width: auto;">
+                </div>
+            </div>
         </div>
-
         <div id="tokenomics" class="section">
             <h2>Tokenomics</h2>
             <p><strong>Token Supply:</strong> 1,000,000,000</p>
-            <p>Pump Fun Fair Launch<br>
-            No Team Token<br>
-            No Pre-mint<br>
-            LP tokens are burnt<br>
-            Contract ownership is renounced.</p>
+            <p>- Pump Fun Fair Launch<br>
+            - No Team Allocation<br>
+            - LP tokens are burnt<br>
+            - Contract ownership is renounced</p>
         </div>
-
         <div id="roadmap" class="section">
             <h2>Roadmap</h2>
-            <p><strong>Phase 1:</strong> Buy Rice</p>
-            <p><strong>Phase 2:</strong> Cook Rice</p>
-            <p><strong>Phase 3:</strong> Eat Rice</p>
+            <p><strong>Phase 1:</strong> Buy CHICE</p>
+            <p><strong>Phase 2:</strong> Cook CHICE</p>
+            <p><strong>Phase 3:</strong> Eat CHICE</p>
         </div>
     </div>
 
