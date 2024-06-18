@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinese Love Rice</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Comic+Neue&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -17,15 +17,36 @@
             background: #ff4d4d; /* Red background */
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
             font-family: 'Comic Neue', cursive; /* Fun and meme-like font */
         }
         .header h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin: 10px 0;
         }
         .header p {
-            font-size: 1.5em;
+            font-size: 2em;
+            margin: 0;
+        }
+        .nav {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
         }
         .container {
             width: 80%;
@@ -33,41 +54,135 @@
             padding: 20px;
             text-align: center;
         }
-        .description {
-            margin-top: 30px;
-        }
         .description p {
             font-size: 1.5em; /* Increased font size for Chinese text */
             line-height: 1.6;
         }
-        .image-slot {
-            margin-top: 30px;
+        .buttons {
+            margin: 20px 0;
         }
-        .image-slot img {
-            max-width: 100%;
+        .buttons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            background: #ff4d4d;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .buttons a:hover {
+            background: #b71d24;
+        }
+        .section {
+            text-align: left;
+            margin: 40px 0;
+        }
+        .section h2 {
+            font-size: 2em;
+            color: #ff4d4d;
+            border-bottom: 3px solid gold;
+            padding-bottom: 5px;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .about-section {
+            display: flex;
+            align-items: center;
+        }
+        .about-section img {
+            width: 50%;
             height: auto;
-            display: block;
-            margin: 0 auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+        .about-section .text {
+            width: 50%;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="header">
-        <h1>Chinese Love Rice</h1>
+        <h1>Chinese &lt;3 Rice</h1>
         <p>中國人愛米</p>
     </div>
 
-    <div class="container description">
-        <p>When we eat rice, we become very happy people.</p>
-        <p>當我們吃米飯時，我們就會變成非常快樂的人。</p>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#how-to-buy">How to Buy</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#buy-now">[Buy Now!]</a>
     </div>
 
-    <div class="container image-slot">
-        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+    <div class="container">
+        <div id="home">
+            <img src="https://via.placeholder.com/1200x600" alt="Eating Rice, China" class="main-image">
+            <div class="description">
+                <p>Eating Rice, China</p>
+                <p>在中國吃米飯</p>
+                <p>😍🍚🇨🇳</p>
+            </div>
+            <div class="buttons">
+                <a href="#">Telegram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Dexscreener</a>
+                <a href="#">Pumpfun</a>
+            </div>
+        </div>
+
+        <div id="about" class="section">
+            <div class="about-section">
+                <img src="https://via.placeholder.com/500x400" alt="About Rice">
+                <div class="text">
+                    <h2>About</h2>
+                    <p>In China, we love rice, because rice makes us very very happy people, because rice unites us all together, and because rice is very very healthy.</p>
+                    <p>😍😋🍚🍙🍛🍣🍘</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="how-to-buy" class="section">
+            <h2>How to buy?</h2>
+            <p><strong>Step 1:</strong> Get a wallet<br>
+            Download your wallet of choice (Phantom, Solflare...)</p>
+            <p><strong>Step 2:</strong> Get some SOL<br>
+            Buy some SOL from an exchange (Binance, Bybit...)</p>
+            <p><strong>Step 3:</strong> Go to exchange<br>
+            Buy CHICE from Pump Fun.</p>
+        </div>
+
+        <div id="tokenomics" class="section">
+            <h2>Tokenomics</h2>
+            <p><strong>Token Supply:</strong> 1,000,000,000</p>
+            <p>Pump Fun Fair Launch<br>
+            No Team Token<br>
+            No Pre-mint<br>
+            LP tokens are burnt<br>
+            Contract ownership is renounced.</p>
+        </div>
+
+        <div id="roadmap" class="section">
+            <h2>Roadmap</h2>
+            <p><strong>Phase 1:</strong> Buy Rice</p>
+            <p><strong>Phase 2:</strong> Cook Rice</p>
+            <p><strong>Phase 3:</strong> Eat Rice</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Chinese Love Rice. All rights reserved.</p>
     </div>
 
 </body>
