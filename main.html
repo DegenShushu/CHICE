@@ -18,14 +18,27 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            position: relative; /* Ensure this is relative */
         }
         .header h1 {
-            font-size: 2.5em;
+            font-size: 5em;
             margin: 10px 0;
         }
         .header p {
-            font-size: 2em;
+            font-size: 5em;
             margin: 0;
+        }
+        .header::after {
+            content: "";
+            background: url('background.png') no-repeat center center;
+            background-size: cover;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
         .nav {
             background: #333;
@@ -63,8 +76,8 @@
             text-align: right;
         }
         .gif-container img {
-            max-width: 100%; /* Ensure the GIF does not exceed its container width */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100%;
+            height: auto;
         }
         .container {
             width: 90%;
@@ -86,7 +99,7 @@
             background: #ff4d4d;
             padding: 10px 15px;
             border-radius: 5px;
-            font-size: 1em;
+            font-size: 2em;
             display: inline-block;
         }
         .buttons a:hover {
@@ -189,8 +202,8 @@
 <body>
 
     <div class="header">
-        <h1>Chinese &lt;3 Rice</h1>
-        <p>中國人愛米</p>
+        <h1>CHINESE EATING RICE</h1>
+        <p>中國人吃米飯</p>
     </div>
 
     <div class="nav">
@@ -208,6 +221,7 @@
             <div class="description">
                 <p>Eating Rice, China 😍🍚🇨🇳 </p>
                 <p>在中國吃米飯</p>
+                <p>Credits to Berthold Laufer, who took this photo in China between 1901 and 1904. This man is believed to be the first Chinese person ever photographed while laughing.</p>
             </div>
             <div class="buttons">
                 <a href="#">Telegram</a>
@@ -215,17 +229,16 @@
                 <a href="#">Dexscreener</a>
                 <a href="#">Pumpfun</a>
             </div>
-            <p>Credits to Berthold Laufer, who took this photo in China between 1901 and 1904. This man is believed to be the first Chinese person ever photographed while laughing.</p>
         </div>
 
         <div id="about" class="section">
             <div class="about-section">
-                <img src="tate.png" alt="Description of rice" class="your-class-name" style="max-height: 400px; width: auto;">
+                <img src="002.jpg" alt="Description of rice" class="your-class-name" style="max-height: 400px; width: auto;">
                 <div class="text">
                     <h2>About</h2>
                     <p>In China, we love rice, because rice makes us very very happy people, because rice unites us all together, and because rice is very very healthy.</p>
+                    <p>We Love Rice just like Mice Love Cheese.😍</p>
                     <p>😍😋🍚🍙🍛🍣🍘</p>
-                    <p>Even Andrew Tate loves rice and named his dish, Flavor.</p>
                 </div>
             </div>
         </div>
@@ -263,7 +276,7 @@
     </div>
 
     <div class="footer">
-        <p>&copy; 2024 Chinese Love Rice. All rights reserved.</p>
+        <p>&copy; 2024 Chinese Eating Rice. All rights reserved.</p>
     </div>
 
 </body>
