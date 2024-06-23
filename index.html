@@ -28,17 +28,10 @@
             font-size: 5em;
             margin: 0;
         }
-        .header::after {
-            content: "";
-            background: url('background.png') no-repeat center center;
+        .background-image {
+            background: url('background.jpg') no-repeat center center;
             background-size: cover;
-            opacity: 0.5;
-            top: 0;
-            left: 0;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+            height: 300px; /* Adjust the height as needed */
         }
         .nav {
             background: #333;
@@ -138,6 +131,19 @@
             max-width: 500px;
             margin: 10px;
         }
+        .gif-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .gif-section img {
+            max-width: auto;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .footer {
             background: #333;
             color: white;
@@ -169,6 +175,9 @@
             .section p {
                 font-size: 0.9em;
             }
+            .gif-section img {
+                max-width: 100%;
+            }
         }
         @media (max-width: 480px) {
             .header h1 {
@@ -196,6 +205,9 @@
             .section p {
                 font-size: 0.8em;
             }
+            .gif-section img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -206,9 +218,12 @@
         <p>中國人吃米飯</p>
     </div>
 
+    <div class="background-image"></div>
+
     <div class="nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#gifs">Story</a>
         <a href="#how-to-buy">How to Buy</a>
         <a href="#tokenomics">Tokenomics</a>
         <a href="#roadmap">Roadmap</a>
@@ -223,6 +238,7 @@
                 <p>Eating Rice, China 😍🍚🇨🇳 </p>
                 <p>在中國吃米飯</p>
                 <p>Credits to Berthold Laufer, who took this photo in China between 1901 and 1904. This man is believed to be the first Chinese person ever photographed while laughing.</p>
+                <p><strong>This <a href=https://digitalcollections.amnh.org/archive/Eating-rice--China-2URM1T1Q302R.html>photo</a> is collected by American Museum of Natural History</strong></p>
             </div>
             <div class="buttons">
                 <a href="https://t.me/chiceFun">Telegram</a>
@@ -234,13 +250,24 @@
 
         <div id="about" class="section">
             <div class="about-section">
-                <img src="002.jpg" alt="Description of rice" class="your-class-name" style="max-height: 400px; width: auto;">
+                <img src="001.gif" alt="Description of rice" class="your-class-name" style="max-height: 400px; width: auto;">
                 <div class="text">
                     <h2>About</h2>
                     <p>In China, we love rice, because rice makes us very very happy people, because rice unites us all together, and because rice is very very healthy.</p>
                     <p>We Love Rice just like Mice Love Cheese.😍</p>
                     <p>😍😋🍚🍙🍛🍣🍘</p>
                 </div>
+            </div>
+        </div>
+
+        <div id="gifs" class="section">
+            <h2>Let's get some CHICE</h2>
+            <div class="gif-section">
+            <p>The inspiration for CHICE came from an intriguing historical photo I came across recently. It features a China man laughing heartily while eating rice, taken by Berthold Laufer in China between 1901 and 1904.</p>
+            <p>Unlike the typically serious nature of historical photos, this one captures a moment of joy, proving that even a hundred years ago, rice had the power to make people laugh.</p>
+            <p>Rice is one of the most common foods worldwide, and there are countless memes about it on the internet. It's a staple that resonates with people across #Asia, the MiddleEast, Africa, and even Europe and America.</p>
+            <p>This cultural crossover creates a rich ground for humor and self-deprecation, potentially leading to a strong viral effect.</p>
+                <img src="002.gif" alt="GIF 1">
             </div>
         </div>
 
